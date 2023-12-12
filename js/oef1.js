@@ -6,6 +6,9 @@ let h2 = document.querySelector('#titel2');
 
 console.log(h2);
 
+
+
+
 // let paragrafen = document.querySelectorAll('p');
 
 let paragrafen = document.getElementsByTagName('p');   
