@@ -17,12 +17,14 @@ for (let i = 0; i < alphabet.length; i++) {
 
     letter.appendChild(div);
 
+    let div2 = div.cloneNode(true);
+
     div.addEventListener('click', function () {
-        output.appendChild(document.createTextNode(alphabet[i] + ' '));
+        output.appendChild(div2);
+
+        div.classList.add('done');
+
+        div.id = alphabet[i]
     });
 
 }
-
-letter.addEventListener('click', function () {
-        output.appendChild(txt);
-    })
