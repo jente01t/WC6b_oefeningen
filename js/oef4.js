@@ -6,8 +6,11 @@ function bgColor() {
             let color = btn[i].getAttribute("value");
             btn[i].style.backgroundColor = color;
 
-            btns[i].addEventListener('click', function() {
+            btn[i].addEventListener('click', function () {
                 document.body.style.backgroundColor = color;
             })
+        }
     }
 }
+
+bgColor();
