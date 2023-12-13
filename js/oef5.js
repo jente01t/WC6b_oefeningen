@@ -7,8 +7,11 @@ for (let i = 0; i < alphabet.length; i++) {
 
     let div = document.createElement('div');
 
-    div.appendChild(txt);
+    div.classList.add('letter');
 
+    div.id = alphabet[i]
+
+    div.appendChild(txt);
 
     letter.appendChild(div);
 }
